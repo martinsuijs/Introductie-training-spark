@@ -19,7 +19,3 @@ sc.setLogLevel("ERROR")
 # en voer het script uit in het terminal-venster onder in het scherm d.m.v. het commando 
 # spark-submit Oefeningen-hoofdstuk-5-Groeperen-en-sorteren/Oefening1.py
 
-sales = [(2000, 11.6),(2001,12.3),(2001,12.4),(2002,13.0),(2003,12.9),(2004,13.2),(2005,13.4)]
-salesRdd = sc.parallelize(sales)
-
-print("Aantal elementen: {}".format(salesRdd.count()))

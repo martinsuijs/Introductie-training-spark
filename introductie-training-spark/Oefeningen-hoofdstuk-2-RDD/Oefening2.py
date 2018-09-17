@@ -13,8 +13,3 @@ sc.setLogLevel("ERROR")
 # en voer het script uit in het terminal-venster onder in het scherm d.m.v. het commando 
 # spark-submit Oefeningen-hoofdstuk-2-RDD/Oefening2.py
 
-salesRdd = sc.textFile("Bestanden/vgsales.csv")
-aantalRegels = salesRdd.count()
-
-print("Aantal regels: {}".format(aantalRegels))
-

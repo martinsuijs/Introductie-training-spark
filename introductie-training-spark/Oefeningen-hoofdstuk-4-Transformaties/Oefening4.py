@@ -13,8 +13,3 @@ sc.setLogLevel("ERROR")
 # en voer het script uit in het terminal-venster onder in het scherm d.m.v. het commando 
 # spark-submit Oefeningen-hoofdstuk-4-Trasnformaties/Oefening4.py
 
-salesRdd = sc.textFile("Bestanden/sales.csv")
-header = salesRdd.first()
-salesClean = salesRdd.filter(lambda x: x != header)
-print("aantal regels met header {}".format(salesRdd.count()))
-print("aantal regels zonder header {}".format(salesClean.count()))

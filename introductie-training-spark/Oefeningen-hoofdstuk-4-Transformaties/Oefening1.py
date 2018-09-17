@@ -13,7 +13,3 @@ sc.setLogLevel("ERROR")
 # en voer het script uit in het terminal-venster onder in het scherm d.m.v. het commando 
 # spark-submit Oefeningen-hoofdstuk-4-Trasnformaties/Oefening1.py
 
-salesRdd = sc.textFile("Bestanden/sales.csv")
-
-
-print("inhoud: {}".format(salesRdd.map(lambda x: x.upper()).take(3)))

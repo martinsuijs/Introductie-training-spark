@@ -13,6 +13,3 @@ sc.setLogLevel("ERROR")
 # en voer het script uit in het terminal-venster onder in het scherm d.m.v. het commando 
 # spark-submit Oefeningen-hoofdstuk-3-Acties/Oefening1.py
 
-salesRdd = sc.textFile("Bestanden/sales.csv")
-
-print("Eerste regel: {}".format(salesRdd.first()))

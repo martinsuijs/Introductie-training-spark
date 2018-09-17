@@ -13,9 +13,3 @@ sc.setLogLevel("ERROR")
 # en voer het script uit in het terminal-venster onder in het scherm d.m.v. het commando 
 # spark-submit Oefeningen-hoofdstuk-2-RDD/Oefening1.py
 
-steden = ["Amsterdam", "Rotterdam", "Utrecht", "Den Haag", "Groningen", "Maastricht", "Leeuwarden", "Nijmegen"]
-stedenRdd = sc.parallelize(steden)
-aantalSteden = stedenRdd.count()
-
-print("Aantal steden: {}".format(aantalSteden))
-
